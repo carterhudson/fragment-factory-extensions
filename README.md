@@ -23,15 +23,15 @@ inline fun <reified FragmentT : Fragment> FragmentFactory.instantiate(arguments:
 ## Usage
 
 ```kotlin
-val someArgs = arrayOf(SOME_KEY to "some value")
-fragmentFactory.instantiate<SomeFragment>(*someArgs)
+val someBundle = Bundle()
+fragmentFactory.instantiate<SomeFragment>(someBundle)
 ```
 
 _OR_
 
 ```kotlin
-val someBundle = Bundle()
-fragmentFactory.instantiate<SomeFragment>(someBundle)
+val someArgs = arrayOf(SOME_KEY to "some value")
+fragmentFactory.instantiate<SomeFragment>(*someArgs)
 ```
 
 _OR_
