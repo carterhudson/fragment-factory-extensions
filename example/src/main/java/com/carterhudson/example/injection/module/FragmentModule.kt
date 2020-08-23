@@ -2,7 +2,7 @@ package com.carterhudson.example.injection.module
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import com.carterhudson.enhancedfagmentfactory.nameOf
+import com.carterhudson.nameOf
 import com.carterhudson.example.FragmentA
 import com.carterhudson.example.FragmentB
 import dagger.Module

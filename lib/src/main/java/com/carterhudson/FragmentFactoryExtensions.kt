@@ -1,4 +1,4 @@
-package com.carterhudson.enhancedfagmentfactory
+package com.carterhudson
 
 import android.os.Bundle
 import androidx.core.os.bundleOf

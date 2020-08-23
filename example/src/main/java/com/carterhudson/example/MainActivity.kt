@@ -5,8 +5,8 @@ import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import com.carterhudson.enhancedfagmentfactory.instantiate
-import com.carterhudson.enhancedfagmentfactory.nameOf
+import com.carterhudson.instantiate
+import com.carterhudson.nameOf
 import com.carterhudson.example.databinding.ActivityMainBinding
 import com.carterhudson.example.injection.DaggerExampleComponent
 import com.carterhudson.example.injection.module.FragmentModule
