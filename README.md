@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/carterhudson/fragment-factory-extensions.svg)](https://jitpack.io/#carterhudson/fragment-factory-extensions)
+
 # Fragment Factory Extensions
 
 Some useful extension functions for working with Android's Fragment
