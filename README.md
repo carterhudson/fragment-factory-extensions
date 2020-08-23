@@ -21,7 +21,7 @@ fragmentFactory.instantiate<SomeFragment>(*someArgs)
 _OR_
 ```kotlin
 val someBundle = Bundle()
-fragmentFactory.instantiate<FragmentT>(someBundle)
+fragmentFactory.instantiate<SomeFragment>(someBundle)
 ```
 
 ## But what about my static factories?
