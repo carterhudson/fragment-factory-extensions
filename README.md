@@ -11,18 +11,13 @@ don't have to re-write this for other projects in the future.
 There's an attached example application that uses this stuff in all the
 ways I could think of offhand.
 
-It's super simple and mainly consists of the following two functions:
+It's super simple and mainly consists of the following function, with a few other overloads supporting intermediate types:
 
 ```kotlin
 inline fun <reified FragmentT : Fragment> FragmentFactory.instantiate(arguments: Bundle): FragmentT =
   instantiate(ClassLoader.getSystemClassLoader(), nameOf<FragmentT>())
     .cast<FragmentT>()
     .apply { setArguments(arguments) }
-
-inline fun <reified FragmentT : Fragment> FragmentFactory.instantiate(vararg args: Pair<String, Any?>): FragmentT =
-  instantiate(ClassLoader.getSystemClassLoader(), nameOf<FragmentT>())
-    .cast<FragmentT>()
-    .apply { arguments = bundleOf(*args) }
 ```
 
 ## Usage
