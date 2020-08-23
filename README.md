@@ -34,6 +34,20 @@ val someBundle = Bundle()
 fragmentFactory.instantiate<SomeFragment>(someBundle)
 ```
 
+_OR_
+
+```kotlin
+val someList = listOf<String, Any?>()
+fragmentFactory.instantiate<SomeFragment>(someList)
+```
+
+_OR_
+
+```kotlin
+val someMap = mapOf<String, Any?>()
+fragmentFactory.instantiate<SomeFragment>(someMap)
+```
+
 ## But what about my static factories?
 
 Attached to your static factory methods on your Fragments? Like to keep
